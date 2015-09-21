@@ -1,0 +1,1 @@
+(function(){$(document).ready(function(){var a;return a=$(".pusher .all-content"),$(".bottom.demo.sidebar").sidebar("setting",{dimPage:!1,transition:"overlay",mobileTransition:"overlay"}),$(".button.links").on("click",function(){return 0===$(this).filter(".disabled").size()?$(".bottom.demo.sidebar").sidebar("toggle"):void 0})})}).call(this);
