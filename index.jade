@@ -7,16 +7,7 @@ html(lang="en")
     meta(name="author" content="Luke Coy")
     title Luke Coy
     
-    script(class="coyJsonLd" type="application/ld+json").
-      {
-        "@context": "http://schema.org",
-        "@type": "Person",
-        "name": "Luke Coy",
-        "jobTitle": "Software Engineer",
-        "email": "luke.coy@rit.edu",
-        "sameAs": ["github.com/lukecoy", "linkedin.com/in/lukecoy"],
-        "description": "blah blah blah"
-      }
+    script(class="coyJsonLd" type="application/ld+json" src="./linkedData.json")
   
   body
-    | Testing 1,2,3
+    | Hello World
