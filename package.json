@@ -1,0 +1,23 @@
+{
+  "name": "lukecoy.github.io",
+  "version": "2.0.0",
+  "description": "Luke Coy's somewhat professional website",
+  "main": "index.html",
+  "scripts": {
+    "prepublish": "jade .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukecoy/lukecoy.github.io.git"
+  },
+  "author": "Luke Coy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukecoy/lukecoy.github.io/issues"
+  },
+  "homepage": "https://github.com/lukecoy/lukecoy.github.io#readme",
+  "devDependencies": {
+    "jade": "^1.11.0"
+  }
+}
