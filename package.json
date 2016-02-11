@@ -4,7 +4,7 @@
   "description": "Luke's somewhat professional website",
   "main": "index.html",
   "scripts": {
-    "prepublish": "jade -o ./build ./markup/index.jade && sass ./styles/base.scss ./build/base.css",
+    "prepublish": "jade -o ./ ./markup/index.jade && sass ./styles/base.scss ./base.css --style compressed",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
