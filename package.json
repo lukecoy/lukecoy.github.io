@@ -1,10 +1,10 @@
 {
   "name": "lukecoy.github.io",
   "version": "2.0.0",
-  "description": "Luke Coy's somewhat professional website",
+  "description": "Luke's somewhat professional website",
   "main": "index.html",
   "scripts": {
-    "prepublish": "jade ./index.jade && sass ./style.scss ./style.css",
+    "prepublish": "jade -o ./build ./markup/index.jade && sass ./styles/base.scss ./build/base.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

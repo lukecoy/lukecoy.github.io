@@ -1,0 +1,47 @@
+$json-key-color: rgb(255, 122, 0);
+$json-value-str-color: rgb(0, 148, 0);
+$json-value-email-color: rgb(0, 0, 175);
+
+ol.about.json::before { content: "{"; }
+ol.about.json::after { content: "}"; }
+
+ol.about.json, ol.about.json ol {
+  list-style-type: none;
+  -webkit-padding-start: 0px;
+  display:inline;
+}
+
+ol.about.json {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  line-height: 20px;
+  font-size: 18px;
+
+  li { padding-left: 30px; }
+  li:not(:last-child):after { content: "," }
+  li.attribute {
+    .key { color: $json-key-color; }
+    .str { color: $json-value-str-color; }
+    .email { color: $json-value-email-color; }
+
+    :link, :visited {
+      text-decoration: none;
+      color: #d9230f;
+    }
+
+    .key::before,
+    .str::before, .str::after,
+    a::before, a::after,
+    .email::before, .email::after {
+      content: '"';
+      color: initial;
+    }
+
+    .key::after {
+      content: '": ';
+      color: initial;
+    }
+
+    ol.array::before { content: "["; }
+    ol.array::after { content: "]"; }
+  }
+}
