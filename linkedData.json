@@ -1,9 +1,0 @@
-{
-  "@context": "http://schema.org",
-  "@type": "Person",
-  "name": "Luke Coy",
-  "jobTitle": "Software Engineer",
-  "email": "luke.coy@rit.edu",
-  "sameAs": ["github.com/lukecoy", "linkedin.com/in/lukecoy"],
-  "description": "blah blah blah"
-}

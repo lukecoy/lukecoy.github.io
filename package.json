@@ -4,7 +4,7 @@
   "description": "Luke Coy's somewhat professional website",
   "main": "index.html",
   "scripts": {
-    "prepublish": "jade .",
+    "prepublish": "jade ./src && sass ./src/style.scss ./src/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

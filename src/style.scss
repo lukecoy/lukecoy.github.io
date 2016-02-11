@@ -1,0 +1,59 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+ol {
+  list-style-type: none;
+  -webkit-padding-start: 0px;
+  display:inline;
+}
+
+li {
+  padding-left: 30px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: space-around;
+
+  svg {
+    max-width: 450px;
+    min-width: 250px;
+  }
+
+  ol.json::before {
+    content: "{";
+  }
+
+  ol.json::after {
+    content: "}";
+  }
+
+  ol.json {
+    li:not(:last-child):after {
+      content: ","
+    }
+    li.attribute {
+      .key::before,
+      .str::before {
+        content: '"';
+      }
+      .str::after {
+        content: '"';
+      }
+      .key::after {
+        content: '": ';
+      }
+      ol.array::before {
+        content: "[";
+      }
+      ol.array::after {
+        content: "]";
+      }
+    }
+  }
+
+}

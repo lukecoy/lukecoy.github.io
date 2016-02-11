@@ -1,0 +1,39 @@
+html, body {
+  height: 100%;
+  width: 100%; }
+
+ol {
+  list-style-type: none;
+  -webkit-padding-start: 0px;
+  display: inline; }
+
+li {
+  padding-left: 30px; }
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: space-around; }
+  .flex-container svg {
+    max-width: 450px;
+    min-width: 250px; }
+  .flex-container ol.json::before {
+    content: "{"; }
+  .flex-container ol.json::after {
+    content: "}"; }
+  .flex-container ol.json li:not(:last-child):after {
+    content: ","; }
+  .flex-container ol.json li.attribute .key::before,
+  .flex-container ol.json li.attribute .str::before {
+    content: '"'; }
+  .flex-container ol.json li.attribute .str::after {
+    content: '"'; }
+  .flex-container ol.json li.attribute .key::after {
+    content: '": '; }
+  .flex-container ol.json li.attribute ol.array::before {
+    content: "["; }
+  .flex-container ol.json li.attribute ol.array::after {
+    content: "]"; }
+
+/*# sourceMappingURL=style.css.map */
