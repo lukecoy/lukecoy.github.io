@@ -1,6 +1,8 @@
-html, body {
+html, body, figure {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  margin: 0;
+  background-color: #eeeeee; }
 
 ol {
   list-style-type: none;
@@ -10,30 +12,66 @@ ol {
 li {
   padding-left: 30px; }
 
+:link, :visited {
+  text-decoration: none;
+  color: #d9230f; }
+
+figure > * {
+  padding-left: 10px;
+  padding-right: 10px; }
+
 .flex-container {
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: space-around; }
   .flex-container svg {
-    max-width: 450px;
-    min-width: 250px; }
+    max-width: 350px;
+    min-width: 250px;
+    border-radius: 10px; }
   .flex-container ol.json::before {
     content: "{"; }
   .flex-container ol.json::after {
     content: "}"; }
-  .flex-container ol.json li:not(:last-child):after {
-    content: ","; }
-  .flex-container ol.json li.attribute .key::before,
-  .flex-container ol.json li.attribute .str::before {
-    content: '"'; }
-  .flex-container ol.json li.attribute .str::after {
-    content: '"'; }
-  .flex-container ol.json li.attribute .key::after {
-    content: '": '; }
-  .flex-container ol.json li.attribute ol.array::before {
-    content: "["; }
-  .flex-container ol.json li.attribute ol.array::after {
-    content: "]"; }
+  .flex-container ol.json {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    line-height: 20px;
+    font-size: 18px; }
+    .flex-container ol.json li:not(:last-child):after {
+      content: ","; }
+    .flex-container ol.json li.attribute .key {
+      color: #ff7a00; }
+    .flex-container ol.json li.attribute .str {
+      color: #009400; }
+    .flex-container ol.json li.attribute .email {
+      color: #0000af; }
+    .flex-container ol.json li.attribute .key::before,
+    .flex-container ol.json li.attribute .str::before,
+    .flex-container ol.json li.attribute a::before,
+    .flex-container ol.json li.attribute .email::before {
+      content: '"';
+      color: initial; }
+    .flex-container ol.json li.attribute .str::after,
+    .flex-container ol.json li.attribute a::after,
+    .flex-container ol.json li.attribute .email::after {
+      content: '"';
+      color: initial; }
+    .flex-container ol.json li.attribute .key::after {
+      content: '": ';
+      color: initial; }
+    .flex-container ol.json li.attribute ol.array::before {
+      content: "["; }
+    .flex-container ol.json li.attribute ol.array::after {
+      content: "]"; }
+
+footer {
+  color: #D3D3D3;
+  text-align: center;
+  margin-top: -20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  footer :link, footer :visited {
+    color: #03a9f4;
+    outline: 0;
+    text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

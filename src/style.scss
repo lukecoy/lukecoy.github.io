@@ -1,6 +1,8 @@
-html, body {
+html, body, figure {
   height: 100%;
   width: 100%;
+  margin: 0;
+  background-color: #eeeeee;
 }
 
 ol {
@@ -13,6 +15,16 @@ li {
   padding-left: 30px;
 }
 
+:link, :visited {
+  text-decoration: none;
+  color: #d9230f;
+}
+
+figure > * {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .flex-container {
   display: flex;
   align-items: center;
@@ -20,8 +32,9 @@ li {
   align-content: space-around;
 
   svg {
-    max-width: 450px;
+    max-width: 350px;
     min-width: 250px;
+    border-radius: 10px;
   }
 
   ol.json::before {
@@ -33,19 +46,39 @@ li {
   }
 
   ol.json {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    line-height: 20px;
+    font-size: 18px;
+
     li:not(:last-child):after {
       content: ","
     }
     li.attribute {
-      .key::before,
-      .str::before {
-        content: '"';
+      .key {
+        color: rgb(255, 122, 0);
       }
-      .str::after {
+      .str {
+        color: rgb(0, 148, 0);
+      }
+      .email {
+        color: rgb(0, 0, 175);
+      }
+      .key::before,
+      .str::before,
+      a::before,
+      .email::before {
         content: '"';
+        color: initial;
+      }
+      .str::after,
+      a::after,
+      .email::after {
+        content: '"';
+        color: initial;
       }
       .key::after {
         content: '": ';
+        color: initial;
       }
       ol.array::before {
         content: "[";
@@ -56,4 +89,17 @@ li {
     }
   }
 
+}
+
+footer {
+  color: #D3D3D3;
+  text-align: center;
+  margin-top: -20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  :link, :visited {
+      color: #03a9f4;
+      outline: 0;
+      text-decoration: none;
+  }
 }

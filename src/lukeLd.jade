@@ -1,7 +1,7 @@
 ol(class="about json" itemscope itemtype="http://schema.org/Person")
   li.attribute
     span.key @context
-    span.value.str http://schema.org
+    a(href="http://schema.org" class="value") http://schema.org
     
   li.attribute
     span.key @type
@@ -17,16 +17,16 @@ ol(class="about json" itemscope itemtype="http://schema.org/Person")
     
   li.attribute
     span.key email
-    span(class="value str" itemprop="email") luke.coy@rit.edu
+    span(class="value email" itemprop="email") luke.coy@rit.edu
     
   li.attribute
     span.key sameAs
     ol.array.value
       li
-        span(class="str" itemprop="sameAs") github.com/lukecoy
+        a(href="http://github.com/lukecoy" class="" itemprop="sameAs") http://github.com/lukecoy
       li
-        span(class="str" itemprop="sameAs") linkedin.com/in/lukecoy
+        a(href="http://linkedin.com/in/lukecoy" class="" itemprop="sameAs") http://linkedin.com/in/lukecoy
       
   li.attribute 
     span.key description
-    span(class="value str" itemprop="description") blah blah blah
+    span(class="value str" itemprop="description") Likes spaghetti, spotify, and SVGs

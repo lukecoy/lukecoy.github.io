@@ -1,13 +1,19 @@
 doctype html
-html(lang="en")
-  head
-    meta(charset="utf-8")
-    meta(name="description" content="Luke Coy's somewhat-professional website")
-    meta(name="keywords" content="HTML, CSS, JavaScript")
-    meta(name="author" content="Luke Coy")
-    link(rel="stylesheet" type="text/css" href="style.css")
-    title Luke Coy
+html(lang="en-US")
+  meta(charset="utf-8")
+  meta(name="description" content="Luke Coy's somewhat-professional website")
+  meta(name="keywords" content="HTML, CSS, JavaScript")
+  meta(name="author" content="Luke Coy")
+  link(rel="stylesheet" type="text/css" href="style.css")
+  title Luke Coy
   
-  body.flex-container
+  figure.flex-container
     include ./luke.svg
-    include ./lukeLd.jade
+    figcaption
+      include ./lukeLd.jade
+
+  footer
+     | Learn more about 
+     a(href="https://developers.google.com/schemas/formats/json-ld") JSON-LD
+     |  and  
+     a(href="https://developers.google.com/schemas/formats/microdata") Microdata
