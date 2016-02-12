@@ -23,11 +23,6 @@ ol.about.json {
     .str { color: $json-value-str-color; }
     .email { color: $json-value-email-color; }
 
-    :link, :visited {
-      text-decoration: none;
-      color: #d9230f;
-    }
-
     .key::before,
     .str::before, .str::after,
     a::before, a::after,
