@@ -5,12 +5,12 @@ $link-color: #d9230f;
 html, body, figure {
   height: 100%;
   width: 100%;
-  margin: 0;
   background-color: #eeeeee;
+  margin: 0;
 }
 
 figcaption {
-  padding: 20px 20px 20px 20px;
+  padding: 20px 0 20px 0;
 }
 
 :link, :visited {
@@ -36,8 +36,9 @@ figcaption {
   flex-wrap: wrap;
 
   svg {
-    width: 275px;
-    height: 275px;
+    height: 30%;
+    width: 30%;
+    min-height: 275px;
     min-width: 275px;
   }
 }

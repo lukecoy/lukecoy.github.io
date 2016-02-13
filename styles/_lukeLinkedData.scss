@@ -13,8 +13,6 @@ ol.about.json, ol.about.json ol {
 
 ol.about.json {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  line-height: 20px;
-  font-size: 18px;
 
   li { padding-left: 30px; }
   li:not(:last-child):after { content: "," }
