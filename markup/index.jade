@@ -8,15 +8,14 @@ html(lang="en-US")
   link(rel="stylesheet" type="text/css" href="base.css")
   title Luke Coy
   
-  body(role="main")
-    section.main.flex-container(role="main")
-      figure(aria-describedby="svgDesc")
-        figcaption(hidden id="svgDesc") A monochromatic vector graphic of Luke
-        include ./luke.svg
-      include ./lukeLd.jade
+  section.main.flex-container(role="main")
+    figure(aria-describedby="svgDesc")
+      figcaption(hidden id="svgDesc") A monochromatic vector graphic of Luke
+      include ./luke.svg
+    include ./lukeLd.jade
 
-    footer(role="contentinfo")
-      a(href="https://developers.google.com/schemas/formats/json-ld") JSON-LD 
-      | &amp;  
-      a(href="https://developers.google.com/schemas/formats/microdata") microdata 
-      | provide standards-based, machine-readable data across the web.
+  footer(role="contentinfo")
+    a(href="https://developers.google.com/schemas/formats/json-ld") JSON-LD 
+    | &amp;  
+    a(href="https://developers.google.com/schemas/formats/microdata") microdata 
+    | provide standards-based, machine-readable data across the web.
