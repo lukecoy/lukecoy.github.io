@@ -35,7 +35,7 @@ ol.about.json {
   ol.about.json li.attribute ol.array::after {
     content: "]"; }
 
-html, body, figure {
+html, body, section.main.flex-container {
   height: 100%;
   width: 100%;
   background-color: #eeeeee;
@@ -47,11 +47,11 @@ figcaption {
 :link, :visited {
   text-decoration: none;
   color: #d9230f;
-  transition: color .2s ease-out, background 2s ease-in;
-  -o-transition: color .2s ease-out, background 2s ease-in;
-  -ms-transition: color .2s ease-out, background 2s ease-in;
-  -moz-transition: color .2s ease-out, background 2s ease-in;
-  -webkit-transition: color .2s ease-out, background 2s ease-in; }
+  transition: color 0.2s ease-out, background 2s ease-in;
+  -o-transition: color 0.2s ease-out, background 2s ease-in;
+  -ms-transition: color 0.2s ease-out, background 2s ease-in;
+  -moz-transition: color 0.2s ease-out, background 2s ease-in;
+  -webkit-transition: color 0.2s ease-out, background 2s ease-in; }
 
 :link:hover, :visited:hover {
   color: #03a9f4; }

@@ -1,32 +1,51 @@
-ol(class="about json" itemscope itemtype="http://schema.org/Person")
+ol(class="about json" 
+aria-describedby="schemaDescription"
+aria-label="About Me"
+itemscope itemtype="http://schema.org/Person")
   li.attribute
-    span.key @context
-    a(href="http://schema.org" class="value") http://schema.org
+    span.key#context @context
+    a(href="http://schema.org" 
+    class="value" 
+    aria-labelledby="context") http://schema.org
     
   li.attribute
-    span.key @type
-    span.value.str Person
+    span.key#type @type
+    span.value.str(aria-labelledby="type") Person
     
   li.attribute
-    span.key name
-    span(class="value str" itemprop="name") Luke Coy
+    span.key#name name
+    span(class="value str" 
+    itemprop="name" 
+    aria-labelledby="name") Luke Coy
     
   li.attribute
-    span.key jobTitle
-    span(class="value str" itemprop="jobTitle") Software Engineer
+    span.key#jobTitle jobTitle
+    span(class="value str" 
+    itemprop="jobTitle" 
+    aria-labelledby="jobTitle") Software Engineer
     
   li.attribute
-    span.key email
-    span(class="value email" itemprop="email") luke.coy@rit.edu
+    span.key#email email
+    span(class="value email" 
+    itemprop="email" 
+    aria-labelledby="email") luke.coy@rit.edu
     
   li.attribute
-    span.key sameAs
-    ol.array.value
+    span.key#sameAs sameAs
+    ol.array.value(aria-labelledby="sameAs")
       li
-        a(href="http://github.com/lukecoy" class="" itemprop="sameAs") http://github.com/lukecoy
+        a(href="http://github.com/lukecoy" 
+        itemprop="sameAs" 
+        title="Personal Github Profile") http://github.com/lukecoy
       li
-        a(href="http://linkedin.com/in/lukecoy" class="" itemprop="sameAs") http://linkedin.com/in/lukecoy
+        a(href="http://linkedin.com/in/lukecoy" 
+        itemprop="sameAs" 
+        title="LinkedIn Profile") http://linkedin.com/in/lukecoy
       
-  li.attribute 
-    span.key description
-    span(class="value str" itemprop="description") Likes spaghetti and spotify
+  li.attribute
+    span.key#description description
+    span(class="value str" 
+    itemprop="description" 
+    aria-labelledby="description") Likes spaghetti and spotify
+
+  div#schemaDescription(hidden) Information about me, displayed in JSON-LD format.

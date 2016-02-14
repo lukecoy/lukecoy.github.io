@@ -1,8 +1,9 @@
-@import "_lukeLinkedData.scss";
+@import "_lukeLinkedData";
+@import "_TransitionColorMixin";
 
 $link-color: #d9230f;
 
-html, body, figure {
+html, body, section.main.flex-container {
   height: 100%;
   width: 100%;
   background-color: #eeeeee;
@@ -17,11 +18,7 @@ figcaption {
   text-decoration: none;
   color: $link-color;
 
-  transition:color .2s ease-out, background 2s ease-in;
-  -o-transition:color .2s ease-out, background 2s ease-in;
-  -ms-transition:color .2s ease-out, background 2s ease-in;
-  -moz-transition:color .2s ease-out, background 2s ease-in;
-  -webkit-transition:color .2s ease-out, background 2s ease-in;
+  @include transition(.2s, 2s);
 }
 
 :link:hover, :visited:hover {
