@@ -64,9 +64,7 @@ figcaption {
   flex-wrap: wrap; }
   .flex-container svg {
     height: 100%;
-    width: 100%;
-    min-height: 275px;
-    min-width: 275px; }
+    width: 100%; }
 
 footer {
   color: #D3D3D3;
