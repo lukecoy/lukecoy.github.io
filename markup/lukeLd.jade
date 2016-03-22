@@ -2,6 +2,9 @@ ol(class="about json"
 aria-describedby="schemaDescription"
 aria-label="About Me"
 itemscope itemtype="http://schema.org/Person")
+
+  div#schemaDescription(hidden) Information about me, displayed in JSON-LD format.
+
   li.attribute
     span.key#context @context
     a(href="http://schema.org" 
@@ -51,5 +54,3 @@ itemscope itemtype="http://schema.org/Person")
     span(class="value str" 
     itemprop="description" 
     aria-labelledby="description") Likes spaghetti and spotify
-
-  div#schemaDescription(hidden) Information about me, displayed in JSON-LD format.
