@@ -4,6 +4,8 @@
   "description": "Luke's somewhat professional website",
   "main": "index.html",
   "scripts": {
+    "jade-watch": "jade --watch ./markup/index.jade -o ./",
+    "sass-watch": "sass --watch ./styles/base.scss:./base.css",
     "prepublish": "jade -o ./ ./markup/index.jade && sass ./styles/base.scss ./base.css --style compressed",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
