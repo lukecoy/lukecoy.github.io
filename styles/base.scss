@@ -10,10 +10,6 @@ html, body, section.main.flex-container {
   margin: 0;
 }
 
-figcaption {
-  padding: 20px 0 20px 0;
-}
-
 :link, :visited {
   text-decoration: none;
   color: $link-color;
@@ -28,14 +24,19 @@ figcaption {
 .flex-container {
   display: flex;
   align-items: center;
+  align-content: stretch;
   justify-content: center;
-  align-content: center;;
   flex-wrap: wrap;
+}
 
-  svg {
-    height: 100%;
-    width: 100%;
+@media (min-height: 570px) {
+  .flex-container {
+    align-content: center;
   }
+}
+
+figure {
+  width: 300px;
 }
 
 footer {
