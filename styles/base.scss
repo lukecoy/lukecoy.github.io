@@ -3,11 +3,16 @@
 
 $link-color: #d9230f;
 
-html, body, section.main.flex-container {
+html, body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   height: 100%;
   width: 100%;
+  min-height: 555px;
+  min-width: 290px;
   background-color: #eeeeee;
-  margin: 0;
 }
 
 :link, :visited {
@@ -24,25 +29,43 @@ html, body, section.main.flex-container {
 .flex-container {
   display: flex;
   align-items: center;
-  align-content: stretch;
+  align-content: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-@media (min-height: 570px) {
-  .flex-container {
-    align-content: center;
+@media(max-width: 330px) {
+  html {
+    font-size: .9em;
   }
 }
 
+@media (max-height: 630px) {
+  html {
+    font-size: .9em;
+  }
+
+  .flex-container {
+    align-content: stretch;
+  }
+
+  footer.schemaLinks {
+    margin-top: 0;
+  }
+
+}
+
 figure {
-  width: 300px;
+  width: 250px;
 }
 
 footer {
-  color: #D3D3D3;
+  font-size: .9em;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
   text-align: center;
-  margin-top: -20px;
+  color: #D3D3D3;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   :link, :visited {
