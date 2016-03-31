@@ -1,0 +1,11 @@
+@import "_colorTransition";
+
+@mixin links($link-color, $link-hover-color) {
+  @include colorTransition(.2s, 2s);
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}

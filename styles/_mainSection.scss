@@ -1,0 +1,13 @@
+@import "mixins/_links";
+
+section.main {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+ol.about a {
+  @include links(#d9230f, #03a9f4);
+}

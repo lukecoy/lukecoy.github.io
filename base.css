@@ -1,3 +1,21 @@
+section.main {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+ol.about a {
+  transition: color 0.2s ease-out, background 2s ease-in;
+  -o-transition: color 0.2s ease-out, background 2s ease-in;
+  -ms-transition: color 0.2s ease-out, background 2s ease-in;
+  -moz-transition: color 0.2s ease-out, background 2s ease-in;
+  -webkit-transition: color 0.2s ease-out, background 2s ease-in;
+  color: #d9230f;
+  text-decoration: none; }
+  ol.about a:hover {
+    color: #03a9f4; }
+
 ol.about.json::before {
   content: "{"; }
 
@@ -37,7 +55,26 @@ ol.about.json {
   ol.about.json li.attribute ol.array::after {
     content: "]"; }
 
-html, body {
+footer {
+  font-size: .9em;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  text-align: center;
+  color: #D3D3D3;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  footer a {
+    transition: color 0.2s ease-out, background 2s ease-in;
+    -o-transition: color 0.2s ease-out, background 2s ease-in;
+    -ms-transition: color 0.2s ease-out, background 2s ease-in;
+    -moz-transition: color 0.2s ease-out, background 2s ease-in;
+    -webkit-transition: color 0.2s ease-out, background 2s ease-in;
+    color: #b8e2fc;
+    text-decoration: none; }
+    footer a:hover {
+      color: #03a9f4; }
+
+html {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,24 +84,8 @@ html, body {
   min-width: 290px;
   background-color: #eeeeee; }
 
-:link, :visited {
-  text-decoration: none;
-  color: #d9230f;
-  transition: color 0.2s ease-out, background 2s ease-in;
-  -o-transition: color 0.2s ease-out, background 2s ease-in;
-  -ms-transition: color 0.2s ease-out, background 2s ease-in;
-  -moz-transition: color 0.2s ease-out, background 2s ease-in;
-  -webkit-transition: color 0.2s ease-out, background 2s ease-in; }
-
-:link:hover, :visited:hover {
-  color: #03a9f4; }
-
-.flex-container {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: wrap; }
+figure {
+  width: 250px; }
 
 @media (max-width: 760px) and (max-height: 630px), (max-width: 330px) {
   html {
@@ -72,20 +93,5 @@ html, body {
 
   .flex-container {
     align-content: stretch; } }
-figure {
-  width: 250px; }
-
-footer {
-  font-size: .9em;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 5%;
-  text-align: center;
-  color: #D3D3D3;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  footer :link, footer :visited {
-    color: #b8e2fc;
-    outline: 0;
-    text-decoration: none; }
 
 /*# sourceMappingURL=base.css.map */

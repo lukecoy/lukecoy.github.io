@@ -1,15 +1,10 @@
-ol(class="about json" 
-aria-describedby="schemaDescription"
-aria-label="About Me"
-itemscope itemtype="http://schema.org/Person")
+ol(class="about json" aria-describedby="schemaDescription" aria-label="About Me" itemscope itemtype="http://schema.org/Person")
 
   div#schemaDescription(hidden) Information about me, displayed in JSON-LD format.
 
   li.attribute
     span.key#context @context
-    a(href="http://schema.org" 
-    class="value" 
-    aria-labelledby="context") schema.org
+    a(href="http://schema.org" class="value" aria-labelledby="context") schema.org
     
   li.attribute
     span.key#type @type
@@ -17,40 +12,26 @@ itemscope itemtype="http://schema.org/Person")
     
   li.attribute
     span.key#name name
-    span(class="value str" 
-    itemprop="name" 
-    aria-labelledby="name") Luke Coy
+    span(class="value str" itemprop="name" aria-labelledby="name") Luke Coy
     
   li.attribute
     span.key#jobTitle jobTitle
-    span(class="value str" 
-    itemprop="jobTitle" 
-    aria-labelledby="jobTitle") Software Engineer
+    span(class="value str" itemprop="jobTitle" aria-labelledby="jobTitle") Software Engineer
     
   li.attribute
     span.key#email email
-    span(class="value email" 
-    itemprop="email" 
-    aria-labelledby="email") luke.coy@rit.edu
+    span(class="value email" itemprop="email" aria-labelledby="email") luke.coy@rit.edu
     
   li.attribute
     span.key#sameAs sameAs
     ol.array.value(aria-labelledby="sameAs")
       li
-        a(href="http://github.com/lukecoy" 
-        itemprop="sameAs" 
-        title="Github Profile") github.com/lukecoy
+        a(href="http://github.com/lukecoy" itemprop="sameAs" title="Github Profile") github.com/lukecoy
       li
-        a(href="http://linkedin.com/in/lukecoy" 
-        itemprop="sameAs" 
-        title="LinkedIn Profile") linkedin.com/in/lukecoy
+        a(href="http://linkedin.com/in/lukecoy" itemprop="sameAs" title="LinkedIn Profile") linkedin.com/in/lukecoy
       li 
-        a(href="http://lukecoy.github.io/blog/"
-        itemprop="sameAs"
-        title="Blog") lukecoy.com/blog
+        a(href="http://lukecoy.github.io/blog/" itemprop="sameAs" title="Blog") lukecoy.com/blog
       
   li.attribute
     span.key#description description
-    span(class="value str" 
-    itemprop="description" 
-    aria-labelledby="description") Likes prog and code
+    span(class="value str" itemprop="description" aria-labelledby="description") Likes prog and code

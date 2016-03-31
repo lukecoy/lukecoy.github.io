@@ -1,4 +1,4 @@
-@mixin transition($easeOutTime, $easeInTime) {
+@mixin colorTransition($easeOutTime, $easeInTime) {
   transition:color $easeOutTime ease-out, background $easeInTime ease-in;
   -o-transition:color $easeOutTime ease-out, background $easeInTime ease-in;
   -ms-transition:color $easeOutTime ease-out, background $easeInTime ease-in;

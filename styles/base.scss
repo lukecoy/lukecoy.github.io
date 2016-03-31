@@ -1,37 +1,25 @@
+@import "_mainSection";
 @import "_lukeLinkedData";
-@import "_TransitionColorMixin";
+@import "_footer";
 
-$link-color: #d9230f;
+$site-background-color: #eeeeee;
 
-html, body {
+html {
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   height: 100%;
   width: 100%;
+  // TODO media query these
   min-height: 555px;
   min-width: 290px;
-  background-color: #eeeeee;
+  //
+  background-color: $site-background-color;
 }
 
-:link, :visited {
-  text-decoration: none;
-  color: $link-color;
-
-  @include transition(.2s, 2s);
-}
-
-:link:hover, :visited:hover {
-  color: #03a9f4;
-}
-
-.flex-container {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: wrap;
+figure {
+  width: 250px;
 }
 
 @media (max-width: 760px) and (max-height: 630px), (max-width: 330px) {
@@ -43,24 +31,4 @@ html, body {
     align-content: stretch;
   }
 
-}
-
-figure {
-  width: 250px;
-}
-
-footer {
-  font-size: .9em;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 5%;
-  text-align: center;
-  color: #D3D3D3;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-  :link, :visited {
-      color: #b8e2fc;
-      outline: 0;
-      text-decoration: none;
-  }
 }
