@@ -35,14 +35,15 @@ ol.about.json {
   ol.about.json li.attribute ol.array::after {
     content: "]"; }
 
-html, body, section.main.flex-container {
+html, body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 100%;
   width: 100%;
-  background-color: #eeeeee;
-  margin: 0; }
-
-figcaption {
-  padding: 20px 0 20px 0; }
+  min-height: 555px;
+  min-width: 290px;
+  background-color: #eeeeee; }
 
 :link, :visited {
   text-decoration: none;
@@ -59,17 +60,32 @@ figcaption {
 .flex-container {
   display: flex;
   align-items: center;
-  justify-content: center;
   align-content: center;
+  justify-content: center;
   flex-wrap: wrap; }
-  .flex-container svg {
-    height: 100%;
-    width: 100%; }
+
+@media (max-width: 330px) {
+  html {
+    font-size: .9em; } }
+@media (max-height: 630px) {
+  html {
+    font-size: .9em; }
+
+  .flex-container {
+    align-content: stretch; }
+
+  footer.schemaLinks {
+    margin-top: 0; } }
+figure {
+  width: 250px; }
 
 footer {
-  color: #D3D3D3;
+  font-size: .9em;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
   text-align: center;
-  margin-top: -20px;
+  color: #D3D3D3;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
   footer :link, footer :visited {
     color: #87CEFA;
