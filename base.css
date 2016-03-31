@@ -5,6 +5,8 @@ ol.about.json::after {
   content: "}"; }
 
 ol.about.json, ol.about.json ol {
+  margin-top: 0px;
+  margin-bottom: 0px;
   list-style-type: none;
   -webkit-padding-start: 0px;
   display: inline; }
