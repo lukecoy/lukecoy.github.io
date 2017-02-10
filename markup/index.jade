@@ -7,13 +7,13 @@ html(lang="en-US")
   meta(name="viewport" content="width=device-width, initial-scale=1")
   link(rel="stylesheet" type="text/css" href="base.css")
   link(rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/4.0.0/normalize.css")
-  title Luke Coy
+  title Luke Coy | Software Engineer
 
-  section.main(role="main")
+  article.main(role="main")
     figure(aria-describedby="svgDesc")
       figcaption(hidden id="svgDesc") A monochromatic vector graphic of Luke
-      include ./lukeSVG.html
-    include ./lukeLd.jade
+      include ./luke-svg.html
+    include ./luke-linked-date.jade
 
   footer.schemaLinks(role="contentinfo")
     a(href="https://developers.google.com/schemas/formats/json-ld") JSON-LD 
