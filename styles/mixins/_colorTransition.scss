@@ -1,7 +1,0 @@
-@mixin colorTransition($easeOutTime, $easeInTime) {
-  transition:color $easeOutTime ease-out, background $easeInTime ease-in;
-  -o-transition:color $easeOutTime ease-out, background $easeInTime ease-in;
-  -ms-transition:color $easeOutTime ease-out, background $easeInTime ease-in;
-  -moz-transition:color $easeOutTime ease-out, background $easeInTime ease-in;
-  -webkit-transition:color $easeOutTime ease-out, background $easeInTime ease-in;
-}
