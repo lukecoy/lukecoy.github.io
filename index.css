@@ -1,0 +1,79 @@
+html {
+  min-width: 250px;
+  background-color: #eeeeee;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  height: 85vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+figure, code {
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Line up the height with the text of the JSON */
+img {
+  margin-top: 1rem;
+  height: calc(12 * 1rem);
+}
+
+code {
+  white-space: pre-wrap;
+}
+
+dt, dd {
+  display: inline;
+  margin: 0;
+}
+
+dt {
+  color: #ff7a00;
+}
+
+dd {
+  color: #009400;
+}
+
+dd > a {
+  color: #d9230f;
+}
+
+dd > a[href^="mailto:"] {
+  color: #0000af;
+}
+
+footer {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: .85rem;
+  margin: 1rem;
+  opacity: .25;
+}
+
+/* Once the screen width becomes small enough to be a square, make the main content column based. */
+@media (max-aspect-ratio: 1/1) {
+  main {
+    flex-direction: column;
+  }
+}
