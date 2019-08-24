@@ -2,7 +2,7 @@
 
 <html lang="en-US">
   <head>
-    <title>Luke Coy's corner of the web</title>
+    <title>Luke Coy</title>
 
     <meta charset="utf-8" />
     <meta name="description" content="Luke - does the things">
@@ -17,25 +17,26 @@
   <body>
     <main>
       <figure>
-        <figcaption>It is I! (Me in college)</figcaption>
         <img src="./your.svg" alt="A monochromatic picture of me">
+        <figcaption>It is I!</figcaption>
       </figure>
 
 <!-- No indention for <code> because white-space: pre-wrap -->
 <code>{
-  "<dt>@context</dt>": "<dd><a href="https://schema.org">schema.org</a></dd>",
-  "<dt>@type</dt>": "<dd>Person</dd>",
-  "<dt>name</dt>": "<dd>Luke Coy</dd>",
-  "<dt>jobTitle</dt>": "<dd>Software Engineer</dd>",
-  "<dt>email</dt>": "<dd><a href="mailto:coy.luke@gmail.com">coy.luke@gmail.com</a></dd>",
-  "<dt>sameAs</dt>": [
-    "<dd><a href="https://github.com/lukecoy">github.com/lukecoy</a></dd>",
-    "<dd><a href="https://linkedin.com/in/lukecoy">linkedin.com/in/lukecoy</a></dd>"
+  "<span class="key">@context</span>": "<a href="https://schema.org">schema.org</a>",
+  "<span class="key">@type</span>": "<span class="value">Person</span>",
+  "<span class="key">name</span>": "<span class="value">Luke Coy</span>",
+  "<span class="key">jobTitle</span>": "<span class="value">Software Engineer</span>",
+  "<span class="key">email</span>": "<a href="mailto:coy.luke@gmail.com">coy.luke@gmail.com</a>",
+  "<span class="key">sameAs</span>": [
+    "<a href="https://github.com/lukecoy">github.com/lukecoy</a>",
+    "<a href="https://linkedin.com/in/lukecoy">linkedin.com/in/lukecoy</a>",
+    "<a href="http://coy.codes">coy.codes</a>",
+    "<a href="http://lukecoy.com">lukecoy.com</a>"
   ],
-  "<dt>description</dt>":
-    "<dd>Likes good music, bad music, and code</dd>"
+  "<span class="key">description</span>":
+    "<span class="value">Likes good music, bad music, and code</span>"
 }</code>
-
     </main>
 
     <footer>
@@ -53,8 +54,10 @@
         "jobTitle": "Software Engineer",
         "email": "coy.luke@gmail.com",
         "sameAs": [
-          "github.com/lukecoy",
-          "linkedin.com/in/lukecoy"
+          "https://github.com/lukecoy",
+          "https://linkedin.com/in/lukecoy",
+          "http://coy.codes",
+          "http://lukecoy.com"
         ],
         "description":
           "Likes good music, bad music, and code"

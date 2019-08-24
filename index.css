@@ -26,34 +26,32 @@ figure {
   align-items: center;
 }
 
-/* Line up the height with the text of the JSON */
+figcaption {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 img {
-  margin-top: 1rem;
-  height: calc(12 * 1rem);
+  margin-bottom: 1rem;
+  height: 12rem;
 }
 
 code {
   white-space: pre-wrap;
 }
 
-dt, dd {
-  display: inline;
-  margin: 0;
-}
-
-dt {
+.key {
   color: #ff7a00;
 }
 
-dd {
+.value {
   color: #009400;
 }
 
-dd > a {
+code > a {
   color: #d9230f;
 }
 
-dd > a[href^="mailto:"] {
+code > a[href^="mailto:"] {
   color: #0000af;
 }
 
