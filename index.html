@@ -17,12 +17,14 @@
   <body>
     <main>
       <figure>
-        <img src="./your.svg" alt="A monochromatic picture of me">
+        <img src="./your.svg" alt="A monochromatic picture of Luke Coy">
         <figcaption><strong>It is I!</strong></figcaption>
       </figure>
 
 <!-- No indention for <code> because white-space: pre-wrap -->
-<code>{
+<code aria-describedby="about-me"><span id="about-me" class="hidden">
+  Welcome to my site! I, Luke, used JSON-LD notation to describe myself here for fun. You will find relevant information about myself in this code notation.
+</span>{
   "<span class="key">@context</span>": "<a href="https://schema.org">schema.org</a>",
   "<span class="key">@type</span>": "<span class="value">Person</span>",
   "<span class="key">name</span>": "<span class="value">Luke Coy</span>",

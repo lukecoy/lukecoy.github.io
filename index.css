@@ -69,6 +69,19 @@ p {
   opacity: .25;
 }
 
+.hidden {
+  /* Using the clip pattern to hide elements but
+     still read them for a screen-reader */
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
 /* Once the screen width becomes small enough to be a square, make the main content column based. */
 @media (max-aspect-ratio: 1/1) {
   main {
