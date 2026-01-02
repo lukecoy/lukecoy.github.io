@@ -33,11 +33,11 @@ code {
 }
 
 .value {
-  color: #009400;
+  color: #007A00;
 }
 
 code > a {
-  color: #d9230f;
+  color: #D2220F;
 }
 
 code > a[href^="mailto:"] {
@@ -56,7 +56,6 @@ p {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .85rem;
   margin: 2rem;
-  opacity: .25;
 }
 
 .hidden {
