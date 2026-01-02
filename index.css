@@ -22,6 +22,7 @@ img, code {
 
 img {
   height: 12rem;
+  width: auto;
 }
 
 code {
@@ -40,7 +41,7 @@ code > a {
   color: #D2220F;
 }
 
-code > a[href^="mailto:"] {
+code > a[href^="mailto:"], footer a {
   color: #0000af;
 }
 
