@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Soviet Tetris</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;background:#000;color:#00c000;height:100%;font-family:monospace}main{height:100%;width:100%;display:flex;align-items:center;justify-content:center;padding:12px}canvas{image-rendering:pixelated;outline:none}#status{position:fixed;inset:0;display:grid;place-items:center;padding:24px;background:#000;text-align:center}#status[hidden]{display:none}
+</style>
+<main><canvas id="screen" width="800" height="286" tabindex="0" aria-label="Soviet Tetris game. Choose level 0 to 9. Arrow left and right move; up rotates; space drops."></canvas></main>
+<div id="status" role="status">Loading Tetris…</div>
+<script type="module" src="app.js"></script></html>
